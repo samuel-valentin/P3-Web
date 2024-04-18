@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Shopping cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/40f5ff1f80.js" crossorigin="anonymous"></script>
+
+    <style>
+        .carousel-item img {
+            max-height: 300px;
+        }
+
+        .card-img-top {
+            max-height: 200px;
+            width: auto;
+        }
+
+        .separador {
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            width: 500px;
+        }
+
+        .navbar {
+            padding: 20px;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav">
+                <!-- aqui -->
+                <a class="navbar-brand" href="home">E-commerce</a>
+                <div class="collapse navbar-collapse" id="barra">
+                    <form class="d-flex">
+                        <input class="form-control search-bar" type="text" placeholder="Encuentra tu producto aqui">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+            </ul>
+            <ul class="navbar-nav navright">
+                <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Mi cuenta</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Ingresar"><i
+                                class="fa fa-user icon"></i> Ingresar</a>
+                    </div>
+                </li>
+                <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
+                    <!-- aqui -->
+                    <a class="nav-link " href="shopping_cart"><i class="fa fa-shopping-cart icon"></i>
+                        <span class="cart-badge">2</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- -----------------------------------------------------------------------------------------------------------------------------------------   -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-md-8">
+                <div class="media d-inline-flex align-items-center product-card" style="border: 2px solid #ccc; padding: 2em; border-radius:5%;">
+                    <div class="media-left me-4">
+                        <h4><b>Tenis Nike</b></h4>
+                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                    <div class="media-body">
+                        <div class="input-group">
+                            <span class="input-group-text" name="cant1">Cantidad:</span>
+                            <input type="text" class="form-control" aria-label="Cantidad" value="1">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button"><i class="fas fa-pencil-alt"></i></button>
+                            </div>
+                        </div>
+                        <div class="input-group mt-2">
+                            <span class="input-group-text">Precio:</span>
+                            <input type="text" class="form-control"
+                                aria-label="Dollar amount (with dot and two decimal places)" value="$1334.00">
+                            <span class="input-group-text">MXN</span>
+                        </div>
+                    </div>
+                    <div class="media-right" style = "margin-left: 50px;">
+                        <img class="selected-product" 
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D"
+                            alt="Title" style=" width: 300px; border-radius:30%;">
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="media d-inline-flex align-items-center product-card mt-4" style="border: 2px solid #ccc; padding: 2em; border-radius:5%;">
+                    <div class="media-left me-4">
+                        <h4><b>Crema Dove</b></h4>
+                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                    <div class="media-body">
+                        <div class="input-group">
+                            <span class="input-group-text">Cantidad:</span>
+                            <input type="text" class="form-control" aria-label="Cantidad" value="2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button"><i class="fas fa-pencil-alt"></i></button>
+                            </div>
+                        </div>
+                        <div class="input-group mt-2">
+                            <span class="input-group-text">Precio:</span>
+                            <input type="text" class="form-control"
+                                aria-label="Dollar amount (with dot and two decimal places)" value="$83.00">
+                            <span class="input-group-text">MXN</span>
+                        </div>
+                    </div>
+                    <div class="media-right" style = "margin-left: 50px;">
+                        <img class="selected-product"
+                            src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                            alt="Title" style=" width: 300px; border-radius:30%;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="total-container" style="border: 2px solid #ccc; padding: 2em; border-radius:5%;">
+                  <h2>Total de compra:</h2>
+                  <hr style="margin: 1em 0; border-style: dotted; color: #ccc;">
+                  <hr>
+                    <h3 class="product-name">Tenis Nike:</h3>
+                  </hr>
+                  <h3 class="price-container">1 x $1334.00</h3>
+                  <hr>
+                    <h3 class="product-name">Crema Dove:</h3>
+                  </hr>
+                  <h3 class="price-container">2 x $83.00</h3>
+                  <hr><br>
+                  <h2 class="total-price">Total: 1500.00 MXN</h2>
+                  <div style="margin-top: 1em;">
+                    <button class="btn btn-success">Pagar</button>
+                    <button class="btn btn-danger">Cancelar</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    
+
+    <footer>
+
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

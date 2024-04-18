@@ -1,0 +1,39 @@
+{
+    "products": [{
+        "_uuid": "59ad9f41-f6fd-4445-a997-c57694b46e22",
+        "_title": "Tenis Nike",
+        "_description": "Tenis para correr en pista color rojo",
+        "_imageUrl": "https:",
+        "_unit": "par",
+        "_stock": 14,
+        "_pricePerUnit": 1334,
+        "_category": "Calzado"
+    }, {
+        "_uuid": "71fefcab-ca80-4c74-a6f0-00a57b9ca3b2",
+        "_title": "SmartWatch",
+        "_description": "Reloj inteligente para runners",
+        "_imageUrl": "https:",
+        "_unit": "pieza",
+        "_stock": 20,
+        "_pricePerUnit": 29034,
+        "_category": "Electronica"
+    }, {
+        "_uuid": "e4d09f09-f157-4e25-a32f-66fac8e33450",
+        "_title": "Termo de Agua",
+        "_description": "Termo para liquido de 500ml",
+        "_imageUrl": "https:",
+        "_unit": "pieza",
+        "_stock": 200,
+        "_pricePerUnit": 540.6,
+        "_category": "Hogar"
+    }, {
+        "_uuid": "17db4fb7-4108-4800-8548-a3742997ab59",
+        "_title": "Huaraches",
+        "_description": "Huaraches de piel para vestir tall 23cm",
+        "_imageUrl": "https:",
+        "_unit": "par",
+        "_stock": 12,
+        "_pricePerUnit": 784.5,
+        "_category": "Calzado"
+    }]
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-commerce Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/40f5ff1f80.js" crossorigin="anonymous"></script>
+
+    <style>
+        .carousel-item img {
+            max-height: 300px;
+        }
+
+        .card-img-top {
+            max-height: 200px;
+            width: auto;
+        }
+
+        .separador {
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            width: 500px;
+        }
+
+        .navbar {
+            padding: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav">
+                <!-- aqui -->
+                <a class="navbar-brand" href="home">E-commerce</a> 
+                <div class="collapse navbar-collapse" id="barra">
+                    <form class="d-flex">
+                        <input class="form-control search-bar" type="text" placeholder="Encuentra tu producto aqui">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+            </ul>
+            <ul class="navbar-nav navright">
+                <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Mi cuenta</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Ingresar"><i
+                                class="fa fa-user icon"></i> Ingresar</a>
+                    </div>
+                </li>
+                <div class="dropdown-divider"></div>
+                </li>
+                <li class="nav-item">
+                    <!-- aqui -->
+                    <a class="nav-link " href="shopping_cart"><i class="fa fa-shopping-cart icon"></i></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div id="carouselId" class="carousel slide separador" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="w-100" src="https://images.freeimages.com/images/large-previews/1d4/landscape-1408578.jpg"
+                    alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="w-100"
+                    src="https://images.freeimages.com/images/large-previews/13e/blue-sky-sea-1379815.jpg"
+                    alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="w-100"
+                    src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2304&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="card productos">
+        <div class="container">
+            <div class="row">
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Audifonos</h4>
+                        <p class="card-text">Audifonos color negro</p>
+                        <p class="card-text">$1234.00</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Tenis Nike</h4>
+                        <p class="card-text">Tenis para correr en pista color rojo</p>
+                        <p class="card-text">$1334.00</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Smart Watch</h4>
+                        <p class="card-text">Reloj inteligente para runners</p>
+                        <p class="card-text">$29034.00</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Crema Dove</h4>
+                        <p class="card-text">Crema humectante para la piel</p>
+                        <p class="card-text">$83.00</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1587303876752-91efb6315dcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Labial</h4>
+                        <p class="card-text">Labial color carmin para boca</p>
+                        <p class="card-text">$65.00</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1610824352934-c10d87b700cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Termo de Agua</h4>
+                        <p class="card-text">Termo para liquido de 500ml </p>
+                        <p class="card-text">$540.60</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1617005082133-548c4dd27f35?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Lente para camara</h4>
+                        <p class="card-text">Lente Sony 9.5f</p>
+                        <p class="card-text">$3945.98</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1593998066526-65fcab3021a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Reloj Casual</h4>
+                        <p class="card-text">Reloj de Cuarzo marca Jabali </p>
+                        <p class="card-text">$2444.99</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1585386931415-464367473a01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Maceta</h4>
+                        <p class="card-text">Maceta de procelana para planta chica </p>
+                        <p class="card-text">$99.00</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1564020426549-fabfb8c467ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Escencia de Lavanda</h4>
+                        <p class="card-text">Aromatizante para almohadas en aerosol</p>
+                        <p class="card-text">$299.50</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1589782182703-2aaa69037b5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Lentes de Sol</h4>
+                        <p class="card-text">Lentes de sol genericos con antirreflejante color negro</p>
+                        <p class="card-text">$689.00</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1625318880248-a7cc6bcf0c0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fHByb2R1Y3RzfGVufDB8fDB8fHww"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Huaraches</h4>
+                        <p class="card-text">Huaraches de piel para vestir tall 23cm </p>
+                        <p class="card-text">$784.50</p>
+                    </div>
+                </div>
+                <div class="d-block col-lg-3 d-block col-md-4 d-block col-sm-6 col-8">
+                    <img class="card-img-top fotos"
+                        src="https://images.unsplash.com/photo-1592839898726-4a99f4d7e764?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI2fHxwcm9kdWN0c3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Juego de anillos</h4>
+                        <p class="card-text">Anillos para dama, replica de diamante color rojo </p>
+                        <p class="card-text">$234.56</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="P01_cat_A.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="P01_cat_B.html">2</a></li>
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="modal fade" id="Ingresar" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content" style="padding: 1em">
+                <form action="#" method="post" id="loginForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Iniciar Sesión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <label for="mail" class="form-label">Correo</label>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" id="mail" name="mail" placeholder="Ingresa tu correo"
+                            aria-label="Username" aria-describedby="basic-addon1" required>
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-user icon"></i></span>
+                        </div>
+                    </div>
+                    <label for="pass" class="form-label">Contraseña</label>
+                    <div class="input-group  mb-3">
+                        <input type="password" class="form-control" id="pass" name="pass"
+                            placeholder="Ingresa tu contraseña" aria-label="Username" aria-describedby="basic-addon1"
+                            required>
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-key icon"></i></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary loginbtn w-100">Login</button>
+                </form>
+                <div class="modal-footer">
+                    ¿No tienes cuenta? <a class="link" href="#" data-bs-toggle="modal"
+                        data-bs-target="#Registro">Regístrate aquí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Registro" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal" role="document">
+        <div class="modal-content">
+            <form action="#" method="post" id="registroForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Registro">Registrarse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="Nombre" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellido" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="email" class="form-control" placeholder="Correo" aria-label="Correo" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="password" class="form-control" placeholder="Contraseña"
+                                    aria-label="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"
+                                    title="La contraseña debe contener al menos una mayúscula, una minúscula, un número y tener al menos 6 caracteres" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="password" class="form-control" placeholder="Confirmar contraseña"
+                                    aria-label="Confirmar contraseña" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <script src="./utils.js"></script>
+    <script src="./products.js"></script>
+    <script src="./data_handler.js"></script>
+    <script src="./shopping_cart.js"></script>
+    <script src="./router.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
